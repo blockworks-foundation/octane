@@ -14,7 +14,7 @@
         "src"
     ],
     "scripts": {
-        "clean": "shx rm -rf dist",
+        "clean": "rm -rf dist",
         "build": "yarn clean && tsc -p tsconfig.json",
         "test": "mocha",
         "test:live": "TEST_LIVE=1 yarn run test",
