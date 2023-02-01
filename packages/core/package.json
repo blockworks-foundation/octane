@@ -15,7 +15,8 @@
     ],
     "scripts": {
         "clean": "rm -rf dist",
-        "build": "yarn clean && tsc -p tsconfig.json",
+        "build": "yarn clean && yarn tsc",
+        "tsc": "tsc -p tsconfig.json",
         "test": "mocha",
         "test:live": "TEST_LIVE=1 yarn run test",
         "test:live-with-test-validator": "start-server-and-test 'solana-test-validator --reset --quiet' http://localhost:8899/health test:live",
